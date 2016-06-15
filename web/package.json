@@ -1,0 +1,31 @@
+{
+  "name": "pokedex",
+  "version": "1.0.0",
+  "description": "Pokedex",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hellenfc/pokedex.git"
+  },
+  "keywords": [
+    "node",
+    "mongo",
+    "angular2",
+    "express"
+  ],
+  "author": "Hellen Fiallos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hellenfc/pokedex/issues"
+  },
+  "homepage": "https://github.com/hellenfc/pokedex#readme",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "mongoose": "^4.5.0",
+    "morgan": "^1.7.0"
+  }
+}
