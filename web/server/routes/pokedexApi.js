@@ -4,7 +4,7 @@ module.exports = function(express){
   var pokedexApi = express.Router();
   pokedexApi.route('/pokemon')
   .get(function(req, res){
-    PokedexController.getPokemon(req, res);
+    PokedexController.getPokemons(req, res);
   });
   pokedexApi.route('/pokemon')
   .post(function(req, res){
