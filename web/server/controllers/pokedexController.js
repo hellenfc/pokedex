@@ -3,7 +3,9 @@ var Type = require('../models/type');
 
 module.exports = {
   getPokemons : function(req, res){
+    Pokemon.find({
 
+    });
   },
   addPokemon : function(req, res){
     var pokemon = new Pokemon();
@@ -39,7 +41,10 @@ module.exports = {
     });
   },
   modifyPokemon : function(req, res, id){
+    var id = req.body.
+    Pokemon.update({
 
+    });
   },
   deletePokemon : function(req, res, id){
 
