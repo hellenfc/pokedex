@@ -7,4 +7,5 @@ var typeSchema = new Schema({
   weak: [{type : Schema.Type.ObjectId, ref : 'Type'}]
 });
 
+typeSchema.index({ name : 'text'})
 module.exports = mongoose.model('Type', typeSchema);

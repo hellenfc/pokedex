@@ -3,6 +3,7 @@ var Schema = mongoose.Schema;
 
 var pokemonSchema = new Schema({
   name : {type: String, required: true, index: {unique: true}},
+  number : {type: Number, required: true},
   type : [{type: Schema.Types.ObjectId, required: true, ref : 'Type'}],
   before : [{type: Schema.Types.ObjectId}, ref: 'Pokemon'],
   after : [{type: Schema.Types.ObjectId}, ref: 'Pokemon'],
