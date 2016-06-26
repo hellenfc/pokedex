@@ -21,6 +21,8 @@ app.get('/', function(req, res){
 //Endpoints
 var pokedexApi = require('./server/routes/pokedexApi')(express);
 app.use(pokedexApi);
+var typeApi = require('./server/routes/typeApi')(express)
+app.use(typeApi);
 //Listen
 var server = app.listen(config.PORT, function(){
   console.log('Server Running on: ' + config.PORT);

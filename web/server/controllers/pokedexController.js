@@ -39,7 +39,7 @@ module.exports = {
         res.json({
           success: true,
           message: 'Success'
-        })
+        });
       }
     });
   },
@@ -75,12 +75,22 @@ module.exports = {
             res.json({success : false, message : 'Error'});
           }
 					else {
-						res.json(sucess)
+						res.json(success)
 					}
-				})
+				});
 			}
-		})
+		});
   },
   deletePokemon : function(req, res, id){
+    var id = req.params.id;
+    Pokemon.remove({
+      id}, function(err, pokemon){
+        if(err){
+          res.json({sucess : false, message: 'Error'});
+        }
+        else{
+          res.json(success)
+        }
+      });
   }
 }
