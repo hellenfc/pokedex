@@ -10,7 +10,7 @@ module.exports = {
 			}
     });
   },
-  addTypes : function(req, res){
+  addType : function(req, res){
     var type = new Type();
 
     if(req.body.strength){
@@ -36,5 +36,8 @@ module.exports = {
         })
       }
     });
+  },
+  modifyType : function(req, res, id){
+    
   }
 }

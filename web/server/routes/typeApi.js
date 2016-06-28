@@ -8,7 +8,13 @@ module.exports = function(express){
     TypeController.getTypes(req, res);
   })
   .post(function(req, res){
-    TypeController.addTypes(req, res);
+    TypeController.addType(req, res);
   })
+
+  typeApi.route('/type/:id')
+  .put(function(req, res){
+    TypeController.modifyType(req, res);
+  })
+
   return typeApi;
 }
